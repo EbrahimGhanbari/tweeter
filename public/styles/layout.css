@@ -24,11 +24,16 @@ body {
 }
 
 .container {
+  display: flex;
+  /* justify-content: center; */
+  
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
   color: #545149;
   background-color: #f4f1ec;
   display: flex;
   width: 90%;
-
 }
 
 

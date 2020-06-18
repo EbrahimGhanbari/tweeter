@@ -1,3 +1,10 @@
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .new-tweet {
   width: 100%;
   display: flex;
@@ -6,8 +13,6 @@
   flex-direction: column;
 
 }
-
-
 
 .button {
   background-color: #4056A1; 
@@ -23,12 +28,12 @@
   border-bottom: 2px solid;
   width: 600pt;
 
-
 }
 
 #btn-count {
   display: flex;
   justify-content: space-between;
+  font-family: 'Bungee';
   
 }
 
