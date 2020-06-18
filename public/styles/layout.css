@@ -23,6 +23,13 @@ body {
   font-family: 'Source Sans Pro';
 }
 
+.container {
+  color: #545149;
+  background-color: #f4f1ec;
+  display: flex;
+  width: 90%;
+
+}
 
 
 
