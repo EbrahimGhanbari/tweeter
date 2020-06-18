@@ -49,6 +49,9 @@
 }
 
 .previous-tweet:hover .tweeter-id {
-  box-shadow: 5px 5px 5px #6EC2E4;
   display: block;
+}
+
+.previous-tweet:hover {
+  box-shadow: 5px 5px 5px #6EC2E4;
 }
