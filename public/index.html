@@ -49,8 +49,9 @@
   <!-- Page-specific (main) content here -->
   <main class="container">
     <section class="new-tweet">
+      <div class="warning-message center">⚠️ Your tweet is too long. Please shorten it or posit it in two tweets! ⚠️</div>
       <h2>Compose Tweet</h2>
-      <form action="/tweets" method="POST">
+      <form action="/tweets/" method="POST">
         <div>
           <textarea class="form__textarea" name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
         </div>

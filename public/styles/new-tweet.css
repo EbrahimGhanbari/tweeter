@@ -40,3 +40,10 @@
 .invalid-counter {
   color:red;
 }
+
+/* warning style */
+.warning-message {
+  margin: 30px;
+  color:red;
+  display: none;
+}
