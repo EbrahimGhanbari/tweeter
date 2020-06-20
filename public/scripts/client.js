@@ -68,7 +68,9 @@ $( document ).ready(function() {
   counter = Number($counter.val());
   
   if (counter < 0) {
-    alert("You exeeded the tweet character limits");
+    $( ".warning-message" ).slideDown( "slow", function() {
+      // Animation complete.
+    });
     return;
   } else if (counter === 140) {
     alert("Invalid tweet, you need to enter something");
@@ -80,6 +82,7 @@ $( document ).ready(function() {
   // this part resposible for getting data from text input
   $( "form" ).submit(function( event ) {
 
+    
     event.preventDefault();
     const url = "/tweets/";
     $.ajax({
