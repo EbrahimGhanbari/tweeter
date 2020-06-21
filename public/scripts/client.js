@@ -60,30 +60,41 @@ $( document ).ready(function() {
 
  // this part resposible for getting data from text input
  
- $( ".button" ).on('click', function( event ) {
+//  $( ".button" ).on('click', function( event ) {
 
-  const $button = $(this);
-  const $form = $button.closest('form');
-  const $counter = $form.find('.counter');
-  counter = Number($counter.val());
+//   const $button = $(this);
+//   const $form = $button.closest('form');
+//   const $counter = $form.find('.counter');
+//   counter = Number($counter.val());
   
-  if (counter < 0) {
-    $( ".warning-message" ).slideDown( "slow", function() {
-      // Animation complete.
-    });
-    return;
-  } else if (counter === 140) {
-    alert("Invalid tweet, you need to enter something");
-    return;
-  }
+//   if (counter < 0) {
+//     $( ".warning-message" ).slideDown( "slow", function() {
+//       // Animation complete.
+//     });
+//     return;
+//   } else if (counter === 140) {
+//     alert("Invalid tweet, you need to enter something");
+//     return;
+//   }
 
-});
+// });
 
   // this part resposible for getting data from text input
   $( "form" ).submit(function( event ) {
+    event.preventDefault();
+    const $form = $("form");
+    const $counter = $form.find('.counter');
+    counter = Number($counter.val());
+  
+  if (counter < 0) {
+    $("#long-tweet").slideDown( "slow", function(){});
+    return;
+  } else if (counter === 140) {
+    $("#empty-tweet").slideDown( "slow", function(){});
+    return;
+  }
 
     
-    event.preventDefault();
     const url = "/tweets/";
     $.ajax({
       type: "POST",
@@ -91,6 +102,8 @@ $( document ).ready(function() {
       data: $("form").serialize(),
       success: function(data)
       {
+        $("#long-tweet").empty();
+        $("#empty-tweet").empty();
         loadTweets();
       }
     });

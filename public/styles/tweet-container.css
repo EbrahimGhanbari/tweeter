@@ -1,6 +1,7 @@
 .previous-tweet{
   margin: 80px;
-  width: 600pt;
+  /* width: 600pt; */
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,8 +36,8 @@
   background-color: #f4f1ec;
   /* border: none; */
   border-bottom: 2px solid;
-  width: 550pt;
-  
+  width: 550pt; 
+    
 }
 
 .article-third-div {

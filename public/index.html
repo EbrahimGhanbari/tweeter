@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="/styles/header.css" type="text/css" />
   <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
   <link rel="stylesheet" href="/styles/tweet-container.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/responsive.css" type="text/css" />
 
 
   <!-- External JS -->
@@ -28,6 +29,9 @@
   <script type="text/javascript" src="/scripts/client.js"></script>
   <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
+  <!-- Disabling Viewport Zooming -->
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
 </head>
 
 <body>
@@ -36,20 +40,23 @@
     <span> <strong>Write</strong> a new tweet</span>
   </nav>
 
+  <div id="test">
+  
   <header>
     <div>
       <img src="/images/profile-hex.png">
     </div>
     <br>
     <div>
-      <h2>Ebrahim Ghanbari</h2>
+      <h2>Amy Welsh</h2>
     </div>
   </header>
 
   <!-- Page-specific (main) content here -->
   <main class="container">
     <section class="new-tweet">
-      <div class="warning-message center">⚠️ Your tweet is too long. Please shorten it or posit it in two tweets! ⚠️</div>
+      <div id="long-tweet" class="warning-message center">⚠️ Your tweet is too long. Please shorten it or posit it in two tweets! ⚠️</div>
+      <div id="empty-tweet" class="warning-message center">⚠️ OOPS!!! You have to enter something ⚠️</div>
       <h2>Compose Tweet</h2>
       <form action="/tweets/" method="POST">
         <div>
@@ -64,7 +71,8 @@
     <section class="previous-tweet"  id="tweets-container">  
     </section>
   </main>
-</body>
+</div> <!-- TEST DIV-->
+</body>  
 
 </html>
 
