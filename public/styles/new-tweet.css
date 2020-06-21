@@ -6,10 +6,10 @@
 }
 
 .new-tweet {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
 
 }
@@ -26,7 +26,8 @@
   background-color: #f4f1ec;
   border: none;
   border-bottom: 2px solid;
-  width: 600pt;
+  width: 550pt;
+  /* width: 600pt; */
 
 }
 

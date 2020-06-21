@@ -40,37 +40,37 @@
     <span> <strong>Write</strong> a new tweet</span>
   </nav>
 
-  <div id="test">
+  <div id="wrap">
   
-  <header>
-    <div>
-      <img src="/images/profile-hex.png">
-    </div>
-    <br>
-    <div>
-      <h2>Amy Welsh</h2>
-    </div>
-  </header>
+    <header>
+      <div>
+        <img src="/images/profile-hex.png">
+      </div>
+      <br>
+      <div>
+        <h2>Amy Welsh</h2>
+      </div>
+    </header>
 
-  <!-- Page-specific (main) content here -->
-  <main class="container">
-    <section class="new-tweet">
-      <div id="long-tweet" class="warning-message center">⚠️ Your tweet is too long. Please shorten it or posit it in two tweets! ⚠️</div>
-      <div id="empty-tweet" class="warning-message center">⚠️ OOPS!!! You have to enter something ⚠️</div>
-      <h2>Compose Tweet</h2>
-      <form action="/tweets/" method="POST">
-        <div>
-          <textarea class="form__textarea" name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+   <!-- Page-specific (main) content here -->
+    <main class="container">
+      <section class="new-tweet">
+        <div id="long-tweet" class="warning-message center">⚠️ Your tweet is too long. Please shorten it or posit it  in two tweets! ⚠️</div>
+        <div id="empty-tweet" class="warning-message center">⚠️ OOPS!!! You have to enter something ⚠️</div>
+        <h2>Compose Tweet</h2>
+        <form action="/tweets/" method="POST">
+          <div>
+            <textarea class="form__textarea" name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
         </div>
-        <div id="btn-count">
-          <button class="button"  type="submit">Tweet</button>
-          <output name="counter" class="counter">140</output>
-        </div>
-      </form>
-    </section>
-    <section class="previous-tweet"  id="tweets-container">  
-    </section>
-  </main>
+          <div id="btn-count">
+            <button class="button"  type="submit">Tweet</button>
+            <output name="counter" class="counter">140</output>
+          </div>
+        </form>
+      </section>
+      <section class="previous-tweet"  id="tweets-container">  
+      </section>
+    </main>
 </div> <!-- TEST DIV-->
 </body>  
 

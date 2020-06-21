@@ -1,14 +1,10 @@
 .previous-tweet{
   margin: 80px;
-  /* width: 600pt; */
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   justify-content: space-between;  
   flex-direction: column;
-  /* border-style: solid;
-  border-color: #545149; */
 }
 
 .article-tweet {
@@ -16,6 +12,7 @@
   padding: 5pt;
   border-style: solid;
   border-color: #545149;
+  width: 100%;
   
 }
 
@@ -36,7 +33,7 @@
   background-color: #f4f1ec;
   /* border: none; */
   border-bottom: 2px solid;
-  width: 550pt; 
+  /* width: 550pt;  */
     
 }
 

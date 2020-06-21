@@ -3,7 +3,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 500pt;
+  /* width: 500pt; */
   height: 400px;
   margin-top: 120px;
   background-color: #aca9b0;
@@ -15,7 +15,3 @@ img{
 }
 
 
-
-#test {
-  width: 100%;
-}

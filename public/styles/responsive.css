@@ -1,0 +1,40 @@
+@media only screen and (min-width: 1024px) {
+  
+  #wrap{
+    display:flex;
+    justify-content:space-around;
+    margin-top: 50pt;
+        
+  }
+
+  header {
+    width: 25%;
+  }
+  
+  .new-tweet {
+    margin-top: 100pt;
+    
+  }
+}
+
+
+@media only screen and (max-width: 770px) {
+  #tweet-text {
+    width: 450px;
+  }
+}
+
+
+
+@media only screen and (max-width: 460px) {
+  #tweet-text {
+    width: 300px;
+  }
+}
+
+
+@media only screen and (max-width: 335px) {
+  #tweet-text {
+    width: 235px;
+  }
+}
