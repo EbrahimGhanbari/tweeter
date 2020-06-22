@@ -1,5 +1,5 @@
 // this function responsible for counting num of chars
-$(function () {
+$(function() {
   $(".form__textarea").on('keyup', function() {
     const $textArea = $(this);
     const $form = $textArea.closest('form');
@@ -13,6 +13,5 @@ $(function () {
       $counter.removeClass("invalid-counter");
     }
     $counter.html(140 - length);
-       });
-  })
-
+  });
+})
