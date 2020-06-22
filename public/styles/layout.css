@@ -3,6 +3,8 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+
+/* This stylesheet is to set the general layout of the webpage */
 html {
   box-sizing: border-box;
  
@@ -17,25 +19,11 @@ html {
  */
 
 body {
-  /* width: 100%; */
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans Pro';
 }
-
-.container {
-  display: flex;  
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  color: #545149;
-  background-color: #f4f1ec;
-  display: flex;
-  /* width: 90%; */
-}
-
-
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
