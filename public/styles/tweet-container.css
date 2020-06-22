@@ -1,4 +1,8 @@
 
+/* this section is a child of ".container" class-
+it handles the styling of previous tweets 
+you can find the section in the index.html but the rest is added through jquery in the following JS file:
+public/scripts/client.js*/
 .previous-tweet{
   margin: 80px;
   display: flex;
@@ -8,15 +12,16 @@
   flex-direction: column;
 }
 
+/* all of the following are child of .previous-tweet */
 .article-tweet {
   margin: 10pt;
   padding: 5pt;
   border-style: solid;
   border-color: #545149;
   width: 100%;
-  
 }
 
+/* the .article-tweet has three div as follow */
 .top-pre-tweet {
   display: flex;
   align-items: center;
@@ -32,10 +37,7 @@
   justify-content: center;
   text-align: center;
   background-color: #f4f1ec;
-  /* border: none; */
   border-bottom: 2px solid;
-  /* width: 550pt;  */
-    
 }
 
 .article-third-div {
@@ -47,11 +49,13 @@
 
 }
 
+/* this is the like icon */
 #icons{
   display:flex;
   width: 2vh;
 }
 
+/* when tweet posted */
 #days {
   font-size: 15px;
 }
@@ -63,7 +67,11 @@
 }
 
 
+.avatar{
+  width: 40%;
+}
 
+this handle the hovering on previous tweet box
 .article-tweet:hover .tweeter-id {
   display: block;
 }

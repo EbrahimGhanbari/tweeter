@@ -1,9 +1,3 @@
-/*
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
- * https://css-tricks.com/international-box-sizing-awareness-day/
- * Do not modify these two selectors, please
- */
-
 /* This stylesheet is to set the general layout of the webpage */
 html {
   box-sizing: border-box;
