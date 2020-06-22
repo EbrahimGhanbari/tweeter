@@ -1,3 +1,6 @@
+/* this stylesheet styles the form for entering the new tweet */
+
+/* center style - have been used in different places - be careful of changing this  */
 .center {
   display: flex;
   align-items: center;
@@ -5,15 +8,14 @@
   text-align: center;
 }
 
+/* parent of all the following in this stylesheet */
 .new-tweet {
-  /* width: 100%; */
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   flex-direction: column;
-
 }
 
+/* Styling the tweet click button */
 .button {
   background-color: #4056A1; 
   border: none;
@@ -22,27 +24,28 @@
   text-align: center;
   font-family: 'Bungee';
 }
+
+/* the input bar - this is a textarea */
 #tweet-text {
   background-color: #f4f1ec;
   border: none;
   border-bottom: 2px solid;
   width: 550pt;
-  /* width: 600pt; */
-
 }
 
+/* this is for counter and button styling together */
 #btn-count {
   display: flex;
   justify-content: space-between;
   font-family: 'Bungee';
-  
+
 }
 
+/* warning style */
 .invalid-counter {
   color:red;
 }
 
-/* warning style */
 .warning-message {
   margin: 30px;
   color:red;
