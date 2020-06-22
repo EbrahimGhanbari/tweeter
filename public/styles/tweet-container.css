@@ -46,6 +46,11 @@
 
 }
 
+#icons{
+  display:flex;
+  width: 2vh;
+}
+
 #days {
   font-size: 15px;
 }
@@ -55,6 +60,8 @@
   display: none;
 
 }
+
+
 
 .article-tweet:hover .tweeter-id {
   display: block;

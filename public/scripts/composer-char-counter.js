@@ -1,3 +1,4 @@
+// this function responsible for counting num of chars
 $(function () {
   $(".form__textarea").on('keyup', function() {
     const $textArea = $(this);
