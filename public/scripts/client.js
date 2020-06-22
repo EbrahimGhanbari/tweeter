@@ -1,17 +1,16 @@
-$( document ).ready(function() {
+$(document).ready(function() {
 
-  //this us a scape function to make sure 
+  //this is a scape function to make sure user inout will not interpert as JS
   const escape =  function(str) {
     let div = document.createElement('div');
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
 
-  //this func convert date in milli second to lapsed data
-
+  //this func convert date in milliseconds to elapsed time
   const dateConverter = function(dateMilliseconds) {
     const today = new Date();
-    const todayMilliseconds = today.getTime(); 
+    const todayMilliseconds = today.getTime();
     const timeDifference = Math.trunc((todayMilliseconds - dateMilliseconds) / 86400000);
 
     if (timeDifference < 1) {
@@ -31,9 +30,10 @@ $( document ).ready(function() {
     return `${year} years ago`;
   };
   
+  //this function create new tweet using the data inside the db or data entered by user
   function createTweetElement(tweetData) {  
-  
-    const $tweet = 
+
+    const $tweet =
     $(`
       <article class="article-tweet">
         <div class = "top-pre-tweet">
@@ -59,7 +59,7 @@ $( document ).ready(function() {
     `);
 
     return $tweet;
-  };
+  }
 
   const renderTweets = function(tweets) {
     for (let tweet in tweets) {
@@ -70,38 +70,37 @@ $( document ).ready(function() {
 
   const loadTweets = () => {
     $.ajax('/tweets', { method: 'GET' })
-    .then(function (data) {
-      $('#tweets-container').empty();
-      renderTweets(data);
-    });
-  };
+      .then(function(data) {
+        $('#tweets-container').empty();
+        renderTweets(data);
+      });
+    };
 
   //load the tweets here
   loadTweets();
 
   // this part resposible for getting data from text input
-  $( "form" ).submit(function( event ) {
+  $("form").submit(function(event) {
     event.preventDefault();
     const $form = $("form");
     const $counter = $form.find('.counter');
     counter = Number($counter.val());
   
-  if (counter < 0) {
-    $("#long-tweet").slideDown( "slow", function(){});
-    return;
-  } else if (counter === 140) {
-    $("#empty-tweet").slideDown( "slow", function(){});
-    return;
-  }
+    if (counter < 0) {
+      $("#long-tweet").slideDown("slow", function() {});
+      return;
+    } else if (counter === 140) {
+      $("#empty-tweet").slideDown("slow", function() {});
+      return;
+    }
 
-    
+    //this jquery resposible for sending data for db and also emptying perivous warning
     const url = "/tweets/";
     $.ajax({
       type: "POST",
       url: url,
       data: $("form").serialize(),
-      success: function(data)
-      {
+      success: function(data) {
         $("#long-tweet").empty();
         $("#empty-tweet").empty();
         loadTweets();
@@ -110,5 +109,5 @@ $( document ).ready(function() {
 
   });
 
-}); //end of define query fun
+});
 
